@@ -5,7 +5,7 @@ URL: https://klevi525.github.io/webfejlesztes/
 
 Weboldal témája: Négy alkoholfajta történelmét, hagyományait és jellegzetességeit ismerteti a weboldal. Az olvasó betekintést nyerhet a whiskey, rum, abszint és vodka fogyasztási szokásaiba és egyéb érdekességeibe.
 
-Javascript kód: A scriptek a "js" nevű almappában találhatóak. Az egyik script a "whiskey.html" oldalon található, ami a whiskey-ajánló űrlap validálására szolgál. A script felhasználói preferenciák alapján visszaad egy a felhasználó választásaihoz illő whiskey-fajtát. A másik script a "rum.html" oldalon van, ami egy alkohol-kalkulátor. Ki lehet választani négy különböző kevert italt, amelyhez meg kell adni a fogyasztók számát, valamint a kívánt fejenkénti fogyasztott mennyiséget, a kalkulátor pedig visszaad egy körülbelüli alkohol és keverő mennyiséget, ami szükséges a kívánt mennyiség elkészítéséhez.
+Javascript kód: A scriptek a "js" nevű almappában találhatóak. Az egyik script a "whiskey.html" oldalon található, ami a whiskey-ajánló űrlap validálására szolgál. A script felhasználói preferenciák alapján visszaad egy a felhasználó választásaihoz illő whiskey-fajtát. A másik script a "rum.html" oldalon van, ami egy alkohol-kalkulátor. Lehet választani négy különböző kevert ital közül, amelyhez meg kell adni a fogyasztók számát, valamint a kívánt fejenkénti fogyasztott mennyiséget, a kalkulátor pedig visszaad egy körülbelüli alkohol és keverő mennyiséget, ami szükséges a kívánt mennyiség elkészítéséhez.
 
 Használt egyedi fonttípus: Cormorant Garamond
 Google fonts-on elérhető: https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap
