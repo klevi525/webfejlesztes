@@ -1,0 +1,1315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.navi ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navi ul li a {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+/* index */
+
+body.index-oldal {
+    background-color: #f3e2c8;
+    color: #2b221b;
+}
+
+.index-oldal h1, 
+.index-oldal h2 {
+    letter-spacing: 0.02em;
+}
+
+.index-oldal .fejlec {
+    background-color: #2a170d;
+}
+
+.index-oldal .navi {
+    background-color: rgba(87, 14, 14, 0.88);
+    border-bottom: 1px solid rgba(255, 220, 190, 0.25);
+}
+
+.index-oldal .logo span {
+    color: #f5d3a0;
+}
+
+.index-oldal .navi ul li a {
+    color: #f0ddc5;
+}
+
+.index-oldal .navi .fooldal {
+    color: #e09832;
+    border-bottom: 2px solid #e09832;
+    padding-bottom: 0.2rem;
+}
+
+.index-oldal .navi a:hover {
+    color: #e09832;
+    border-bottom: 2px solid #e09832;
+}
+
+.index-oldal .hero {
+    position: relative;
+    height: 60vh;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-oldal .hero-image {
+    position: absolute;
+    inset: 0;
+    background-image: url("képek/indexhero.jpg");
+    background-position: center;
+    filter: brightness(0.45);
+}
+
+.index-oldal .hero-content {
+    position: relative;
+    text-align: center;
+    padding: 0 1.5rem;
+    max-width: 700px;
+    color: #fdfaf6;
+}
+
+.index-oldal .hero-content h1 {
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+}
+
+.index-oldal .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.8rem;
+}
+
+.index-oldal .felfed {
+    display: inline-block;
+    padding: 0.75rem 1.8rem;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+}
+
+.index-oldal .felfed:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.index-oldal .tartalom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+.index-oldal .intro h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #6a1b1a;
+}
+
+.index-oldal .intro {
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.index-oldal .kartyak {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    text-align: justify;
+}
+
+.index-oldal .kartya {
+    flex: 0 0 calc(50% - 0.9rem);
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(120, 40, 40, 0.3);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.index-oldal .kartya:hover {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+    transform: translateY(-10px);
+}
+
+.index-oldal .kartya h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+    color: #7c1f1d;
+}
+
+.index-oldal .kartya p {
+    font-size: 1.2rem;
+}
+
+.index-oldal .more {
+    text-decoration: none;
+    font-weight: 500;
+    color: #7c1f1d;
+    border-bottom: 1px solid rgba(124, 31, 29, 0.4);
+    padding-bottom: 2px;
+    font-size: 1.15rem;
+}
+
+.index-oldal .more:hover {
+    border-color: #7c1f1d;
+}
+
+.index-oldal .site-footer {
+    padding: 1.5rem;
+    background-color: #6a1b1a;
+    color: #f5d3a0;
+    font-size: 1.15rem;
+}
+
+/* whiskey */
+
+body.whiskey-oldal {
+    background-color: #f3e2c8;
+    color: #2b221b;
+    text-align: justify;
+}
+
+.whiskey-oldal h1 {
+    font-size: 4.5rem;
+}
+
+.whiskey-oldal h2 {
+    font-size: 2.6rem;
+}
+
+.whiskey-oldal h3 {
+    font-size: 2rem;
+}
+
+.whiskey-oldal h4 {
+    font-size: 1.45rem;
+}
+
+.whiskey-oldal .fejlec {
+    background-color: #2e241c;
+}
+
+.whiskey-oldal .navi {
+    background-color: rgba(32, 25, 19, 0.85);
+    border-bottom: 1px solid rgba(255, 220, 190, 0.25);
+}
+
+.whiskey-oldal .logo span {
+    color: #f2d7a2;
+}
+
+.whiskey-oldal .navi ul li a {
+    color: #e8d9c2;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.whiskey-oldal .navi a:hover {
+    color: #ffca73;
+    border-bottom: 2px solid #ffca73;
+}
+
+.whiskey-oldal .navi .active {
+    color: #ffca73;
+    font-weight: 600;
+    border-bottom: 2px solid #ffca73;
+    padding-bottom: 0.2rem;
+}
+
+.whiskey-oldal .whiskey-hero {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url("képek/jameson.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4rem 5rem;
+    box-shadow: inset 0 0 0 1000px rgba(20, 14, 10, 0.55);
+}
+
+.whiskey-oldal .whiskey-hero h1 {
+    font-size: 4.8rem;
+    color: #f2e9da;
+    margin-bottom: 0.5rem;
+}
+
+.whiskey-oldal .whiskey-hero p {
+    color: #e0d5c4;
+    font-size: 1.45rem;
+    max-width: 600px;
+}
+
+.whiskey-oldal .gomb {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    border: 1px solid #ffffff;
+    background-color: #f5efe6;
+    color: #3a2c22;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+}
+
+.whiskey-oldal .gomb:hover {
+    background-color: transparent;
+}
+
+.whiskey-oldal .tartalom-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.whiskey-oldal .content-card {
+    background: #fffaf4;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.whiskey-oldal .content-card h2 {
+    color: #4a3328;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.whiskey-oldal .content-card h3 {
+    margin-top: 2rem;
+    color: #5b3d2f;
+    font-size: 2rem;
+}
+
+.whiskey-oldal .content-card h4 {
+    margin-top: 1rem;
+    color: #7a4e38;
+    font-size: 1.45rem;
+}
+
+.whiskey-oldal .content-card p {
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.whiskey-oldal .content-card ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+}
+
+.whiskey-oldal .content-card ul li {
+    margin-bottom: 0.35rem;
+    font-size: 1.25rem;
+}
+
+.whiskey-oldal .content-card ul li::marker {
+    color: #c47a36;
+}
+
+.whiskey-oldal .footer {
+    background-color: #261d17;
+    color: #e8dccb;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1.15rem;
+}
+
+.whiskey-oldal aside {
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 1.8rem 1.9rem;
+    background-color: rgba(253, 248, 238, 0.96);
+    border-radius: 1rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(80, 48, 30, 0.18);
+}
+
+.whiskey-oldal aside h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    color: #2e241c;
+}
+
+.whiskey-oldal aside > p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: #4b3a2d;
+}
+
+.whiskey-oldal #whiskey-ajanlo-urlap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.whiskey-oldal .form-sor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.whiskey-oldal .form-sor label,
+.whiskey-oldal .form-sor legend {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: #3b2b20;
+}
+
+.whiskey-oldal #whiskey-ajanlo-urlap input[type="text"],
+.whiskey-oldal #whiskey-ajanlo-urlap input[type="email"],
+.whiskey-oldal #whiskey-ajanlo-urlap input[type="number"],
+.whiskey-oldal #whiskey-ajanlo-urlap select {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(70, 45, 30, 0.25);
+    background-color: #fdf7ec;
+    font-size: 1rem;
+    color: #2b221b;
+}
+
+.whiskey-oldal .checkbox-csoport,
+.whiskey-oldal .radio-csoport {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.9rem;
+}
+
+.whiskey-oldal .checkbox-csoport label,
+.whiskey-oldal .radio-csoport label {
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    font-size: 0.95rem;
+    color: #3b2b20;
+}
+
+.whiskey-oldal .range-sor {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: #5a4332;
+}
+
+.whiskey-oldal .range-ertek {
+    font-size: 0.9rem;
+    color: #6a1b1a;
+    font-weight: 600;
+}
+
+.whiskey-oldal .adatkezeles-sor label {
+    font-weight: 500;
+    text-transform: none;
+}
+
+.whiskey-oldal .kuldes-gomb {
+    align-self: flex-start;
+    padding: 0.6rem 1.7rem;
+    border-radius: 999px;
+    border: none;
+    background-color: #6a1b1a;
+    color: #fdfaf6;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.whiskey-oldal .kuldes-gomb:hover {
+    background-color: #8c2624;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.whiskey-oldal .hiba-uzenet {
+    color: #a32121;
+    font-size: 0.8rem;
+    min-height: 1rem;
+}
+
+.whiskey-oldal .siker-uzenet {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #215c23;
+    min-height: 1.1rem;
+}
+
+.whiskey-oldal .ajanlat-doboz {
+    margin-top: 0.4rem;
+    padding: 0.75rem 0.85rem;
+    border-radius: 0.7rem;
+    background-color: #f3e2c8;
+    border: 1px solid rgba(90, 60, 40, 0.35);
+    font-size: 0.95rem;
+    color: #2e241c;
+}
+
+/* rum */
+
+body.rum-oldal {
+    background-color: #35261c;
+    color: #f5e6d8;
+}
+
+.rum-oldal h1 {
+    font-size: 4.5rem;
+}
+
+.rum-oldal h2 {
+    font-size: 2.6rem;
+}
+
+.rum-oldal h3 {
+    font-size: 2rem;
+}
+
+.rum-oldal h4 {
+    font-size: 1.45rem;
+}
+
+.rum-oldal .fejlec {
+    background-color: #2a170d;
+    border-bottom: 1px solid rgba(255, 220, 190, 0.25);
+}
+
+.rum-oldal .navi {
+    background-color: rgba(30, 16, 8, 0.88);
+    backdrop-filter: blur(6px);
+}
+
+.rum-oldal .logo span {
+    color: #f5d3a0;
+}
+
+.rum-oldal .navi ul li a {
+    color: #f0ddc5;
+}
+
+.rum-oldal .navi a:hover {
+    color: #ffb76b;
+    border-bottom: 2px solid #ffb76b;
+}
+
+.rum-oldal .navi .active {
+    color: #ffb76b;
+    font-weight: 600;
+    border-bottom: 2px solid #ffb76b;
+    padding-bottom: 0.2rem;
+}
+
+.rum-oldal .rum-hero {
+    width: 100%;
+    height: 700px;
+    background-image: url("képek/rum.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 3rem 5rem;
+    background-color: #1c0f0a;
+}
+
+.rum-oldal .rum-hero-content {
+    color: #ffeedd;
+    max-width: 550px;
+    background-color: rgba(30, 15, 5, 0.55);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 180, 120, 0.25);
+}
+
+.rum-oldal .rum-hero h1 {
+    font-size: 4.8rem;
+    color: #ffb76b;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+.rum-oldal .rum-hero p {
+    color: #fce7cf;
+    font-size: 1.45rem;
+    max-width: 600px;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.rum-oldal .gomb {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    background-color: #f7e6c8;
+    color: #3a281c;
+    border: 1px solid rgba(255, 200, 130, 0.5);
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+}
+
+.rum-oldal .gomb:hover {
+    background-color: transparent;
+}
+
+.rum-oldal .lista li {
+    margin-left: 1rem;
+}
+
+.rum-oldal .szoveg {
+    background-color: #3b271c;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 35px rgba(202, 172, 136, 0.12);
+    border: 3px solid rgba(0, 0, 0, 0.45);
+    position: relative;
+    text-align: justify;
+}
+
+.rum-oldal main h2,
+.rum-oldal main h3 {
+    color: #ffb76b;
+    margin: 1.5rem 0 0.5rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+}
+
+.rum-oldal p,
+.rum-oldal li {
+    color: #f3e3d1;
+}
+
+.rum-oldal .footer {
+    padding: 1.5rem;
+    background-color: #2a170d;
+    color: #f5d3a0;
+    font-size: 1.15rem;
+}
+
+.rum-oldal .szoveg-kep-rum {
+    float: right;
+    display: flow-root;
+}
+
+.rum-oldal .szoveg-kep-rum img {
+    width: 350px;
+    border: #181313 solid 2px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.rum-oldal .koktel-kalkulator {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(42, 23, 13, 0.75);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 220, 190, 0.25);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    color: #f7e9d6;
+}
+
+.rum-oldal .koktel-kalkulator h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+}
+
+.rum-oldal .koktel-kalkulator p {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    opacity: 0.9;
+}
+
+.rum-oldal .koktel-kalkulator .sor {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.rum-oldal .koktel-kalkulator label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.rum-oldal .koktel-kalkulator input,
+.rum-oldal .koktel-kalkulator select {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 230, 200, 0.4);
+    background-color: rgba(255, 245, 230, 0.08);
+    color: #a8a49c;
+}
+
+.rum-oldal #szamol-gomb {
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 230, 200, 0.45);
+    background-color: rgba(143, 74, 35, 0.9);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.rum-oldal #szamol-gomb:hover {
+    background-color: rgba(160, 85, 40, 1);
+    transform: translateY(-2px);
+}
+
+.rum-oldal .koktel-eredmeny {
+    margin-top: 1.8rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 220, 190, 0.2);
+}
+
+.rum-oldal .koktel-eredmeny h3 {
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+.rum-oldal .koktel-eredmeny ul {
+    margin-left: 1.2rem;
+}
+
+/* abszint */
+
+body.abszint-oldal {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+}
+
+.abszint-oldal h1, 
+.abszint-oldal h2, 
+.abszint-oldal h3 {
+    letter-spacing: 0.03em;
+}
+
+.abszint-oldal .fejlec {
+    background-color: #031712;
+    border-bottom: 1px solid rgba(166, 255, 203, 0.25);
+}
+
+.abszint-oldal .navi {
+    background-color: rgba(4, 36, 26, 0.88);
+    backdrop-filter: blur(6px);
+}
+
+.abszint-oldal .logo span {
+    color: #a6ffcb;
+}
+
+.abszint-oldal .navi ul li a {
+    color: #e6ffe8;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.abszint-oldal .navi a:hover {
+    color: #8affb2;
+    border-bottom: 2px solid #1edb79;
+}
+
+.abszint-oldal .navi .active {
+    color: #a6ffd0;
+    font-weight: 600;
+    border-bottom: 2px solid #1edb79;
+    padding-bottom: 0.2rem;
+}
+
+.abszint-oldal .hero-abszint {
+    width: 100%;
+    height: 700px;
+    background-image: url("képek/absint.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.abszint-oldal .hero-text {
+    color: #ffeedd;
+    max-width: 550px;
+    background: rgba(7, 51, 11, 0.514);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 180, 120, 0.25);
+}
+
+.abszint-oldal .hero-abszint h1 {
+    font-size: 4rem;
+    color: #a6ffcb;
+    text-shadow: 0 0 10px rgba(0,255,120,0.35);
+}
+
+.abszint-oldal .hero-abszint .felirat {
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    color: #e6ffe8;
+}
+
+.abszint-oldal .gomb {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    background-color: #d8f5d0;
+    color: #103c20;
+    border: 1px solid rgba(40, 140, 80, 0.4);
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+}
+
+.abszint-oldal .gomb:hover {
+    background-color: transparent;
+}
+
+.abszint-oldal main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 130, 0.12);
+    
+}
+.abszint-oldal p{
+    text-align: justify;
+}
+
+.abszint-oldal section h3 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+    color: #a6ffcb;
+}
+
+.abszint-oldal section p {
+    margin: 0.5rem 0;
+    color: #f0f0f0;
+}
+
+.abszint-oldal footer {
+    padding: 1.5rem;
+    background-color: #0c271c;
+    color: #b8ffcf;
+    font-size: 1.15rem;
+}
+
+.abszint-oldal #abszint-tortenet-cim {
+    font-size: 3rem;
+}
+
+.abszint-oldal .szoveg-kep-abs {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 8rem;
+}
+
+.abszint-oldal .szoveg-kep-abs img {
+    border: #103c20 2px solid;
+    box-shadow: 0 0 15px rgba(0, 255, 130, 0.12);
+}
+
+/* vodka */
+
+body.vodka-oldal {
+    background-color: #d8f1ff;
+    color: #0a1c33;
+}
+
+.vodka-oldal h1,
+.vodka-oldal h2,
+.vodka-oldal h3,
+.vodka-oldal h4 {
+    color: #0a1c33;
+}
+
+.vodka-oldal .fejlec {
+    background-color: #0a1c33;
+}
+
+.vodka-oldal .navi {
+    background-color: rgba(10, 28, 51, 0.85);
+    border-bottom: 1px solid rgba(200, 230, 255, 0.35);
+}
+
+.vodka-oldal .logo span {
+    color: #d8f1ff;
+}
+
+.vodka-oldal .navi ul li a {
+    color: #e8f4ff;
+    padding-bottom: 0.2rem;
+}
+
+.vodka-oldal .navi a:hover {
+    color: #77b7ff;
+    border-bottom: 2px solid #77b7ff;
+}
+
+.vodka-oldal .navi .active {
+    color: #77b7ff;
+    font-weight: 600;
+    border-bottom: 2px solid #77b7ff;
+    padding-bottom: 0.2rem;
+}
+
+.vodka-oldal .hero {
+    position: relative;
+    min-height: 60vh;
+    background-image: url("képek/vodka.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vodka-oldal .hero-overlay {
+    width: 100%;
+    padding: 4rem 6rem;
+}
+
+.vodka-oldal .hero-text {
+    max-width: 520px;
+    background-color: rgba(5, 15, 35, 0.65);
+    backdrop-filter: blur(3px);
+    padding: 1.8rem 2.2rem;
+    border-radius: 18px;
+}
+
+.vodka-oldal .hero h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.vodka-oldal .hero-leiras {
+    font-size: 1.35rem;
+    color: #e4efff;
+    line-height: 1.7;
+    margin-bottom: 1.6rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.vodka-oldal .hero-btn {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #0a1c33;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.vodka-oldal .hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 60, 130, 0.35);
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.vodka-oldal main {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 60, 130, 0.15);
+    text-align: justify;
+}
+
+.vodka-oldal .footer {
+    padding: 1.5rem;
+    background-color: #0a1c33;
+    color: #fdfaf6;
+    font-size: 1.15rem;
+}
+
+.vodka-oldal .szoveg-kep-vodka {
+    display: flow-root;
+    float: right;
+    padding: 1rem;
+}
+
+.vodka-oldal .szoveg-kep-vodka img {
+    border: #0a1c33 solid 2px;
+    box-shadow: 0 0 30px rgba(0, 60, 130, 0.5);
+}
+
+
+/*reszponzivitas*/
+
+/*laptop /tablet landscape*/
+@media (max-width: 64rem) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .navi {
+        padding: 0.8rem 3rem;
+    }
+
+    .index-oldal .hero {
+        height: 55vh;
+    }
+
+    .whiskey-oldal .whiskey-hero,
+    .rum-oldal .rum-hero,
+    .abszint-oldal .hero-abszint {
+        height: 520px;
+        padding: 3rem 3rem;
+    }
+
+    .vodka-oldal .hero-overlay {
+        padding: 3rem 3rem;
+    }
+
+    .abszint-oldal .szoveg-kep-abs img{
+        margin-left: 3rem;
+        width: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 48rem) {
+    body {
+        font-size: 1rem;
+    }
+
+    .navi {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .logo span {
+        font-size: 1.4rem;
+        letter-spacing: 0.06em;
+    }
+
+    .navi ul {
+        flex-wrap: wrap;
+        gap: 0.6rem 1.4rem;
+    }
+
+    .navi ul li a {
+        font-size: 1rem;
+    }
+
+    .index-oldal .hero {
+        height: auto;
+        min-height: 340px;
+        padding: 3rem 1.5rem;
+    }
+
+    .index-oldal .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .index-oldal .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .index-oldal .tartalom {
+        padding: 2.5rem 1.25rem 3rem;
+    }
+
+    .index-oldal .kartyak {
+        flex-direction: column;
+    }
+
+    .index-oldal .kartya {
+        flex: 1 1 100%;
+        padding: 1.6rem 1.4rem;
+    }
+
+    .whiskey-oldal .whiskey-hero {
+        height: auto;
+        padding: 3rem 1.5rem;
+        align-items: center;
+    }
+
+    .whiskey-oldal .whiskey-hero h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .whiskey-oldal .whiskey-hero p {
+        font-size: 1.15rem;
+        max-width: none;
+        text-align: center;
+    }
+
+    .whiskey-oldal .gomb {
+        margin-top: 1.2rem;
+    }
+
+    .whiskey-oldal .tartalom-container {
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .whiskey-oldal .content-card {
+        padding: 2rem 1.6rem;
+    }
+
+    .whiskey-oldal aside {
+        margin: 2.5rem 1.5rem;
+        max-width: 100%;
+    }
+
+    .rum-oldal .rum-hero {
+        height: auto;
+        padding: 3rem 1.5rem;
+        align-items: flex-end;
+    }
+
+    .rum-oldal .rum-hero-content {
+        max-width: 100%;
+    }
+
+    .rum-oldal .rum-hero h1 {
+        font-size: 3rem;
+    }
+
+    .rum-oldal .rum-hero p {
+        font-size: 1.2rem;
+    }
+
+    .rum-oldal .szoveg {
+        margin: 3rem 1.5rem;
+        padding: 1.8rem 1.5rem;
+    }
+
+    .rum-oldal .szoveg-kep-rum {
+        display: block;
+        margin: 1.5rem auto 0;
+        text-align: center;
+    }
+
+    .rum-oldal .szoveg-kep-rum img {
+        width: 80%;
+        max-width: 260px;
+        border-radius: 40px;
+    }
+
+    .rum-oldal .koktel-kalkulator {
+        margin: 3rem 1.5rem;
+        padding: 1.8rem 1.5rem;
+        max-width: 100%;
+    }
+
+    .abszint-oldal .hero-abszint {
+        height: auto;
+        padding: 3rem 1.5rem;
+        align-items: center;
+    }
+
+    .abszint-oldal .hero-text {
+        max-width: 100%;
+    }
+
+    .abszint-oldal #abszint-tortenet-cim {
+        font-size: 2.4rem;
+    }
+
+    .abszint-oldal .szoveg-kep-abs img{
+        margin-top: 1.7rem;
+    }
+
+    .abszint-oldal main {
+        margin: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .abszint-oldal .szoveg-kep-abs {
+        margin: 1.5rem auto 0;
+        text-align: center;
+    }
+
+    .abszint-oldal .szoveg-kep-abs img {
+        max-width: 80%;
+        height: auto;
+
+    }
+
+    .vodka-oldal .hero {
+        min-height: 360px;
+        align-items: flex-end;
+    }
+
+    .vodka-oldal .hero-overlay {
+        padding: 3rem 1.5rem;
+    }
+
+    .vodka-oldal .hero-text {
+        max-width: 100%;
+    }
+
+    .vodka-oldal .hero h1 {
+        font-size: 3rem;
+    }
+
+    .vodka-oldal .hero-leiras {
+        font-size: 1.15rem;
+    }
+
+    .vodka-oldal main {
+        margin: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .vodka-oldal .szoveg-kep-vodka {
+        float: none;
+        margin: 1.5rem auto 0;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .vodka-oldal .szoveg-kep-vodka img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+/* mobil */
+@media (max-width: 30rem) {
+    .navi {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo span {
+        font-size: 1.25rem;
+        letter-spacing: 0.04em;
+    }
+
+    .navi ul {
+        gap: 0.4rem 1rem;
+    }
+    
+    .index-oldal .hero-content h1,
+    .whiskey-oldal .whiskey-hero h1,
+    .rum-oldal .rum-hero h1,
+    .abszint-oldal .hero-abszint h1,
+    .vodka-oldal .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .index-oldal .hero-content p,
+    .whiskey-oldal .whiskey-hero p,
+    .rum-oldal .rum-hero p,
+    .abszint-oldal .hero-abszint .felirat,
+    .vodka-oldal .hero-leiras {
+        font-size: 1.05rem;
+    }
+
+    .whiskey-oldal .content-card,
+    .rum-oldal .szoveg,
+    .abszint-oldal main,
+    .vodka-oldal main {
+        padding: 1.6rem 1.25rem;
+    }
+
+    .whiskey-oldal aside,
+    .rum-oldal .koktel-kalkulator {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .abszint-oldal .szoveg-kep-abs img{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+

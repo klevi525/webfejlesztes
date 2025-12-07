@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kalmár Levente">
+    <meta name="description" content="A whiskey története és sajátosságai.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkoholok világa &ndash; Whiskey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="képek/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/whiskey.js" defer></script> 
+</head>
+<body class="whiskey-oldal">
+
+    <header class="fejlec">
+        <nav class="navi">
+            <div class="logo"><span>Alkoholok világa</span></div>
+
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="whiskey.html" class="active">Whiskey</a></li>
+                <li><a href="rum.html">Rum</a></li>
+                <li><a href="abszint.html">Abszint</a></li>
+                <li><a href="vodka.html">Vodka</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <div class="whiskey-hero">
+        <h1>Whiskey</h1>
+        <p>Az ír és skót whiskeyk története, hagyományai és különbségei.</p>
+        <a href="#whiskey-tortenet-cim" class="gomb">Tovább a történethez</a>
+    </div>
+    
+    <main class="tartalom-container">
+
+            <article class="content-card">
+                <header>
+                    <h2 id="whiskey-tortenet-cim">A whiskey rövid története</h2>
+                </header>
+                
+                <section>
+                    <h3>Eredet és kezdetek</h3>
+                    <p>
+                        A whiskey eredetét hagyományosan Írországhoz és Skóciához kötik. A legkorábbi feljegyzések a 12&ndash;15. századból
+                        származnak, amikor szerzetesek alkalmazták a lepárlást elsősorban gyógyszerkészítés céljára. Ekkor még nem
+                        élvezeti italként fogyasztották, hanem gyógyító elixírként tartották számon.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Fejlődésük a későbbi évszázadokban</h3>
+                    <p>
+                        A lepárlás gyorsan elterjedt a vidéki területeken, és a helyi mesterek saját módszereikkel alakították
+                        az ital jellegét. Az ír és a skót whiskeyk ezt követően eltérő irányba fejlődtek: különböző gabonafajtákat,
+                        lepárlási technikákat és érlelési eljárásokat alkalmaztak.
+                    </p>
+                    <p>
+                        A 18&ndash;19. században az adózás és a szabályozások jelentős hatással voltak a whiskeyiparra. Skóciában sokáig
+                        virágoztak az illegális hegyi lepárlók, míg Írországban nagy, hivatalos üzemek működtek, amelyek nagy hangsúlyt
+                        fektettek a tisztaságra és a minőségre.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Az ír és a skót whiskey fő különbségei</h3>
+
+                    <h4>Ír whiskey</h4>
+                    <ul>
+                        <li>Általában <strong>háromszor desztillálják</strong>, így lágyabb, tisztább karakterű.</li>
+                        <li>Jellemzően <strong>nem tőzegelt</strong>, nincs füstös ízjegy.</li>
+                        <li>Készülhet malátázott és nem malátázott árpa keverékéből.</li>
+                        <li>Könnyed, gyümölcsös, sima aromavilág.</li>
+                        <li>Fő központjai: Dublin és Cork.</li>
+                    </ul>
+
+                    <h4>Skót whiskey (Scotch)</h4>
+                    <ul>
+                        <li>Gyakran <strong>kétszer desztillálják</strong>, karakteresebb ízt adva.</li>
+                        <li>Sok régióban <strong>tőzegelt malátát</strong> használnak, ami füstös aromát kölcsönöz.</li>
+                        <li>Csak malátázott árpából, illetve gabonawhiskey-keverékből készül.</li>
+                        <li>Híres régiók: Highlands, Islay, Speyside, Lowlands.</li>
+                        <li>Ízvilága a könnyed Speyside-tól az intenzív, füstös Islay típusokig terjed.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fogyasztási kultúra</h3>
+                    <p>
+                        A whiskey fogyasztásának hagyományai különösen erősek. Tisztán vagy kevés vízzel ajánlott kóstolni, gyakran
+                        tulipán formájú Glencairn pohárból, amely kiemeli az aromákat. Az ír whiskey lágyabb, kezdők számára is
+                        ideális, míg a skót whiskey széles ízspektruma a tapasztaltabb rajongókat szólítja meg.
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>Amerikai whiskey és az eltérő írásmód eredete</h3>
+                    <p>
+                        Az amerikai változat, a „whiskey” elnevezés a 19. században vált elterjedtté, elsősorban az ír bevándorlók
+                        hatására. A különbség tehát nyelvi eredetű: az ír formát (whiskey) vették át, míg a skótok által használt
+                        „whiskey” változat maradt Európában jellemző.
+                    </p>
+                </section>
+
+            </article>
+            <aside>
+                <h2>Whiskey ajánló</h2>
+                <p>Add meg az ízlésed, és ajánlunk egy stílust vagy régiót.</p>
+
+                <form id="whiskey-ajanlo-urlap" novalidate>
+
+                    <div class="form-sor">
+                        <label for="nev">Név *</label>
+                        <input type="text" id="nev" name="nev" required>
+                        <small class="hiba-uzenet" id="nev-hiba"></small>
+                    </div>
+
+                    <div class="form-sor">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                        <small class="hiba-uzenet" id="email-hiba"></small>
+                    </div>
+
+                    <div class="form-sor">
+                        <label for="eletkor">Életkor *</label>
+                        <input type="number" id="eletkor" name="eletkor" min="18" max="123" required>
+                        <small class="hiba-uzenet" id="eletkor-hiba"></small>
+                    </div>
+
+                    <div class="form-sor">
+                        <label for="tapasztalat">Mennyire ismered a whiskeys világot? *</label>
+                        <select id="tapasztalat" name="tapasztalat" required>
+                            <option value="">-- válassz --</option>
+                            <option value="kezdo">Teljesen kezdő vagyok</option>
+                            <option value="kozephalado">Középhaladó &ndash; pár típust ismerek</option>
+                            <option value="halado">Haladó &ndash; sokféle whiskeyt kóstoltam</option>
+                        </select>
+                        <small class="hiba-uzenet" id="tapasztalat-hiba"></small>
+                    </div>
+
+                    <fieldset class="form-sor">
+                        <legend>Kedvelt ízjegyek *</legend>
+                        <div class="checkbox-csoport">
+                            <label><input type="checkbox" name="izjegy" value="lagy"> Lágy, könnyed</label>
+                            <label><input type="checkbox" name="izjegy" value="gyumolcsos"> Gyümölcsös</label>
+                            <label><input type="checkbox" name="izjegy" value="fustos"> Füstös, tőzeges</label>
+                            <label><input type="checkbox" name="izjegy" value="fuszeres"> Fűszeres</label>
+                            <label><input type="checkbox" name="izjegy" value="edes"> Mézes / édeskés</label>
+                        </div>
+                        <small class="hiba-uzenet" id="izjegy-hiba"></small>
+                    </fieldset>
+
+                    <fieldset class="form-sor">
+                        <legend>Melyik régió szimpatikusabb? *</legend>
+                        <div class="radio-csoport">
+                            <label><input type="radio" name="regio" value="ir"> Ír whiskey</label>
+                            <label><input type="radio" name="regio" value="speyside"> Speyside (gyümölcsösebb skót)</label>
+                            <label><input type="radio" name="regio" value="highlands"> Highlands (karakteresebb skót)</label>
+                            <label><input type="radio" name="regio" value="islay"> Islay (füstös, tőzeges)</label>
+                            <label><input type="radio" name="regio" value="mindegy"> Nincs kifejezett kedvenc régióm</label>
+                        </div>
+                        <small class="hiba-uzenet" id="regio-hiba"></small>
+                    </fieldset>
+
+                    <div class="form-sor">
+                        <label for="ar">Kb. árkategória (1: olcsóbb &ndash; 5: prémium)</label>
+                        <div class="range-sor">
+                            <span>1</span>
+                            <input type="range" id="ar" name="ar" min="1" max="5" value="3">
+                            <span>5</span>
+                        </div>
+                        <p class="range-ertek" id="ar-ertek">3</p>
+                    </div>
+
+                    <fieldset class="form-sor">
+                        <legend>Hogyan innád legszívesebben?</legend>
+                        <div class="radio-csoport">
+                            <label><input type="radio" name="fogyasztas" value="tisztan" checked> Tisztán</label>
+                            <label><input type="radio" name="fogyasztas" value="parcseppviz"> Pár csepp vízzel</label>
+                            <label><input type="radio" name="fogyasztas" value="jeggel"> Jéggel</label>
+                            <label><input type="radio" name="fogyasztas" value="koktelban"> Koktélban</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-sor adatkezeles-sor">
+                        <label>
+                            <input type="checkbox" id="adatkezeles" name="adatkezeles" required>
+                            Elfogadom az adatkezelési feltételeket. *
+                        </label>
+                        <small class="hiba-uzenet" id="adatkezeles-hiba"></small>
+                    </div>
+
+                    <div class="form-sor gomb-sor">
+                        <button type="submit" class="kuldes-gomb">Whiskey ajánlás kérése</button>
+                    </div>
+
+                    <p id="siker-uzenet" class="siker-uzenet"></p>
+                    <div id="ajanlat-doboz" class="ajanlat-doboz"></div>
+
+                </form>
+        </aside>
+                
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Alkoholok világa &ndash; Whiskey</p>
+    </footer>
+
+</body>
+</html>
