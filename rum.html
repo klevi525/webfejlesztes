@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kalmár Levente">
+    <meta name="description" content="A rum története, típusai és érdekességei.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkoholok világa &ndash; Rum</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="képek/favicon.png">
+    <script src="js/kokter-kalkulator.js" defer></script> 
+</head>
+
+<body class="rum-oldal">
+
+    <header class="fejlec">
+        <nav class="navi">
+            <div class="logo"><span>Alkoholok világa</span></div>
+
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="whiskey.html">Whiskey</a></li>
+                <li><a href="rum.html" class="active">Rum</a></li>
+                <li><a href="abszint.html">Abszint</a></li>
+                <li><a href="vodka.html">Vodka</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="rum-hero">
+        <div class="rum-hero-content">
+            <h1>Rum</h1>
+            <p>A Karib-térség legendás itala, amely évszázadok óta formálja a kereskedelmet és kultúrát.</p>
+            <a href="#rum-tortenet-cim" class="gomb">Tovább a történethez</a>
+        </div>
+    </section>
+
+    <main>
+        <article>
+            <div class="szoveg">
+
+                <header>
+                    <h2 id="rum-tortenet-cim">A rum rövid története</h2>
+                </header>
+
+                <section>
+                    <h3>Eredet és a Karib-térség</h3>
+                    <p>
+                        A rum története szorosan kapcsolódik a cukornádtermesztéshez és a Karib-térség gyarmatosításához. 
+                        A 17. században a karibi ültetvényeken dolgozók fedezték fel, hogy a cukorgyártás mellékterméke, 
+                        a melasz erjeszthető, majd lepárolható, így erős alkohol nyerhető ki belőle.
+                    </p>
+                </section>
+
+
+                <section>
+                    <h3>Rum és a háromszög-kereskedelem</h3>
+                    <p>
+                        A rum gyorsan fontos kereskedelmi termékké vált a háromszög-kereskedelemben: 
+                        Európa, Afrika és az amerikai gyarmatok  között. A rum, a cukornád és a rabszolgaság története 
+                        sajnos elválaszthatatlan egymástól. 
+                    </p>
+                    
+                    <p>
+                        A brit haditengerészet tengerészei naponta rumadagot kaptak, ami több száz éven át 
+                        része volt a flottaszolgálat mindennapjainak.
+                    </p>
+                </section>
+
+                <section class="lista">
+                    <h3>Főbb rumtípusok</h3>
+                    <div class="szoveg-kep-rum">
+                        <img src="képek/rum2.jpg" alt="Rum">
+                    </div>
+                    <ul>
+                        <li><strong>Fehér rum:</strong> Röviden érlelt, lágy, semlegesebb ízű, gyakran koktélok alapja.</li> 
+                        <li><strong>Arany rum:</strong> Hordóban érlelt, enyhén színezett, vaníliás, karamelles aromákkal.</li>
+                        <li><strong>Sötét rum:</strong> Hosszabban érlelt, intenzív, melaszos, fűszeres jegyekkel.</li> 
+                        <li><strong>Fűszeres rum:</strong> Fűszerekkel (pl. fahéj, vanília) ízesített változat.</li>
+                        <li><strong>Overproof rum:</strong> Kiemelkedően magas alkoholtartalmú ital.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fogyasztási szokások</h3>
+                    <p>
+                        A rum számos klasszikus koktél alapja (pl. mojito, daiquiri, piña colada), 
+                        de a magasabb minőségű, érlelt rumokat gyakran önmagukban, tisztán vagy kevés jéggel fogyasztják,
+                        hasonlóan a whiskyhez.
+                    </p>
+                </section>
+
+            </div>
+        </article>
+        <aside class="koktel-kalkulator">
+            <h2>Koktélkalkulátor</h2>
+            <p>Alkohol és keverő kalkulátor bulirendezéshez.</p>
+
+            <form novalidate id="koktel-form">
+                <div class="sor">
+                    <label for="ital-tipus">Választott ital:</label>
+                    <select id="ital-tipus" name="ital-tipus">
+                        <option value="rum-kola">Rum &amp; kóla</option>
+                        <option value="whiskey-szoda">Whiskey &amp; szóda</option>
+                        <option value="vodka-narancs">Vodka &amp; narancslé</option>
+                        <option value="abszint-viz">Abszint &amp; víz</option>
+                    </select>
+                </div>
+
+                <div class="sor">
+                    <label for="fo">Hány főre számolsz?</label>
+                    <input type="number" id="fo" name="fo" min="1" value="4" required>
+                </div>
+
+                <div class="sor">
+                    <label for="italok-fejenkent">Italok száma fejenként:</label>
+                    <input type="number" id="italok-fejenkent" name="italok-fejenkent" min="1" value="2" required>
+                </div>
+
+                <button type="submit" id="szamol-gomb">Számolás</button>
+            </form>
+
+            <div id="eredmeny" class="koktel-eredmeny">
+                
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Alkoholok világa &ndash; Rum</p>
+    </footer>   
+
+</body>
+</html>
