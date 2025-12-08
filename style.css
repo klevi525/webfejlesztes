@@ -1262,6 +1262,18 @@ body.vodka-oldal {
     }
 }
 
+/* laptop */
+@media (min-width: 75rem){
+    .abszint-oldal .szoveg-kep-abs img{
+        height: 45vh;
+        margin-right: 20rem;
+        margin-left: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        display: flow-root;
+        
+    }
+    
 /* mobil */
 @media (max-width: 30rem) {
     .navi {
@@ -1312,4 +1324,5 @@ body.vodka-oldal {
         margin-top: 2rem;
     }
 }
+
 
